@@ -6,8 +6,8 @@ def merge_and_count(n):
 	l = len(n)
 
 	if l <= 10:
-		for i in range(3):
-			for j in range(i+1,3):
+		for i in range(l):
+			for j in range(i+1,l):
 				if n[i] > n[j]:
 					count += 1
 		n.sort()
@@ -47,8 +47,8 @@ def merge_and_count(n):
 
 if __name__ == "__main__":
 	# name = raw_input("please enter the path of the file:\n")
-	name = "/Users/siyuanzheng/desktop/algo program/inversion.txt"
-	#/Users/siyuanzheng/desktop/algo program/inversion.txt
+	name = "/Users/siyuanzheng/desktop/algorithm/inversion.txt"
+	#/Users/siyuanzheng/desktop/algorithm/inversion.txt
 	with open(name) as f:
 		content = f.readlines()
 
@@ -63,7 +63,8 @@ if __name__ == "__main__":
 
 	print count 
 
-	#2407801726
+
+	#2407905288
 
 
 
